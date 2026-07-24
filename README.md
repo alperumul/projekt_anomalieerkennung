@@ -24,6 +24,27 @@ The canonical dataset is
 `new-data/data/bad_nauheim_bereinigt.csv`, SHA-256
 `af807e38e63a253eea4a3639649c67744b0a34b839b80ee7c6682a55ea62991f`.
 
+## Session 1 data foundation
+
+The current foundation supports Python 3.14 and pins pandas 3.0.0 plus pytest
+9.0.2 in `pyproject.toml`. It does not select or install a neural-network
+framework.
+
+From the repository root, run the current canonical-data verifier:
+
+```text
+python scripts/verify_acceptance.py
+```
+
+Run the complete current test suite:
+
+```text
+python -m pytest
+```
+
+These checks establish only the canonical loader and split/condition foundation.
+They do not establish accepted training readiness.
+
 ## Repository boundaries
 
 `new-data/src/` is the partner pipeline snapshot used as audit input. It is not

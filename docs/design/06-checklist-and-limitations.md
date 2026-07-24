@@ -12,10 +12,10 @@ This checklist implements the gates in the [consolidated implementation handoff]
 - [ ] The approval/reapproval message or meeting record is linked if available.
 - [x] The canonical source is `new-data/data/bad_nauheim_bereinigt.csv`.
 - [x] The canonical SHA-256 is `af807e38e63a253eea4a3639649c67744b0a34b839b80ee7c6682a55ea62991f`.
-- [ ] A current verifier reproduces 9,380 rows, 28 series, 335 timestamps, 2,626 originally missing positions and 790 stored values at missing positions.
+- [x] A current verifier reproduces 9,380 rows, 28 series, 335 timestamps, 2,626 originally missing positions and 790 stored values at missing positions.
 - [ ] The verifier reproduces 1,795 training `k=0`, 700 validation `k=6`/`k=4`, 1,999 test `k=6` and 1,578 test `k=4` windows plus the written distinct-score counts.
 - [ ] The exact visitor transform, scaling scope, fitting population, zero-variance behavior and neutral placeholder are frozen in a dated decision.
-- [ ] `series_id` is the exact canonical `name`; any numeric mapping is versioned and shared.
+- [x] `series_id` is the exact canonical `name`; any numeric mapping is versioned and shared.
 - [ ] Derived feature artifacts are regenerated or provenance/hash-validated against the canonical CSV.
 - [ ] `Europe/Berlin` calendar-feature tests pass.
 - [ ] One- and two-hour interior and split-edge patch tests pass.

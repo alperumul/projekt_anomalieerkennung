@@ -69,14 +69,26 @@ A consequential change must record:
 
 Do not rewrite the pre-results design merely to make an observed result look better. Record deviations in the experiment log and discuss them honestly.
 
-## Reproduce the data claims
+## Reproduce the current data-foundation claims
 
 From the repository root, run:
 
 ```text
-python scripts/verify_design_contract.py
+python scripts/verify_acceptance.py
 ```
 
-The current script is a historical verifier for the superseded 26-series design. It is retained as decision evidence, not as the current acceptance gate. Before accepted model training, replace or extend it to verify `new-data`, all 28 series, the current half-open periods, exact patching behavior and continuous-test coverage.
+Run the current tests with:
 
-The revised handoff records independently reproduced expected window and score-coverage counts. Those values still require a current executable verifier before they become accepted-run evidence.
+```text
+python -m pytest
+```
+
+The Session 1 verifier checks the canonical hash, all 28 exact series names,
+the complete hourly grid, original-missingness counts and the current half-open
+split and reporting-condition definitions. It does not yet verify patching,
+calendar features, model window coverage or accepted training readiness.
+
+The retained `scripts/verify_design_contract.py` is historical evidence for the
+superseded 26-series design and is not the current acceptance command. The
+revised handoff's window and score-coverage values still require later current
+executable verification before they become accepted-run evidence.
