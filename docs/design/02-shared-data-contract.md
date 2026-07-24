@@ -267,4 +267,4 @@ Before accepting a run, save:
 - score, label and threshold key validation;
 - clean structural support, derived-copy coverage and exclusion reasons.
 
-The existing [`verify_design_contract.py`](../../scripts/verify_design_contract.py) reproduces historical 26-series decisions only. It is not the acceptance verifier for this contract and must be replaced or extended before accepted training.
+The current [`verify_design_contract.py`](../../scripts/verify_design_contract.py) verifies the pinned 28-series snapshot and the locked training, validation, Condition A and Condition B boundaries. Later acceptance sessions must extend executable verification to the remaining patching, window-coverage and score-support gates before accepted training.

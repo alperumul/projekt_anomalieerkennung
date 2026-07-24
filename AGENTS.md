@@ -38,7 +38,7 @@ for archaeology:
 - `autoencoder design and alternatives.md`;
 - `autoencoder design decisions.md`;
 - `docs/reviews/2026-07-22-design-evidence-review.md`;
-- the earlier 26-series design encoded by `scripts/verify_design_contract.py`.
+- the earlier 26-series design preserved in Git history.
 
 Do not search, import, execute, repair, or copy from `diğer/` during current
 implementation work. Exclude it from broad searches. If historical material is
@@ -63,7 +63,7 @@ Before the first accepted training run, the open gates in the handoff and
   handoff;
 - record the visitor transform, scaling scope, fitting population,
   zero-variance/unseen-series behavior, and neutral placeholder;
-- replace or extend the historical verifier for the current 28-series snapshot;
+- run and extend the current verifier for the remaining acceptance gates;
 - pass mask, patching, timezone, and true-split-boundary tests;
 - reproduce continuous-test coverage for autoencoder `k=6` and sensitivity
   `k=4`; and
@@ -170,14 +170,15 @@ prejudge it.
   large specifications into new files.
 - Do not claim that a check passed unless it was executed successfully.
 
-The historical verifier can be run only as historical evidence:
+Run the current design-contract verifier with:
 
 ```text
 python scripts/verify_design_contract.py
 ```
 
-It is not the current acceptance command. The current implementation must provide
-and document its own verified commands as they are created.
+It verifies the pinned 28-series snapshot and the locked period definitions.
+Extend it and document additional verified commands as later acceptance gates
+are implemented.
 
 ## Research integrity and handoff
 

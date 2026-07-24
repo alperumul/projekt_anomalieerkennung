@@ -33,7 +33,7 @@ framework.
 From the repository root, run the current canonical-data verifier:
 
 ```text
-python scripts/verify_acceptance.py
+python scripts/verify_design_contract.py
 ```
 
 Run the complete current test suite:

@@ -85,7 +85,7 @@ Deutsche Forschungsgemeinschaft. (2023). *Statement by the Executive Committee o
 - [`datenbereinigung_daten_qualitaet_und_speichern.py`](../../new-data/src/datenbereinigung_daten_qualitaet_und_speichern.py) - documents the upstream sensor-quality and storage logic used to produce the delivered CSV.
 - [`windowing.py`](../../new-data/src/windowing.py) - partner preprocessing/windowing snapshot used for the 2026-07-24 dry-run audit; it is not itself the normative shared contract.
 - [`2026-07-24-new-data.sha256`](../provenance/2026-07-24-new-data.sha256) - complete SHA-256 manifest of the inspected `new-data` snapshot.
-- [`verify_design_contract.py`](../../scripts/verify_design_contract.py) - historical verifier for the superseded 26-series design; it must be replaced or extended for current acceptance counts.
+- [`verify_design_contract.py`](../../scripts/verify_design_contract.py) - current acceptance-foundation verifier for the pinned 28-series population and locked training, validation, Condition A and Condition B boundaries.
 - [`autoencoder design decisions.md`](../../autoencoder%20design%20decisions.md) - version-controlled design history, not an academic source.
 
 ## Citation verification rule

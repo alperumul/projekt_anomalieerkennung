@@ -74,7 +74,7 @@ Do not rewrite the pre-results design merely to make an observed result look bet
 From the repository root, run:
 
 ```text
-python scripts/verify_acceptance.py
+python scripts/verify_design_contract.py
 ```
 
 Run the current tests with:
@@ -88,7 +88,7 @@ the complete hourly grid, original-missingness counts and the current half-open
 split and reporting-condition definitions. It does not yet verify patching,
 calendar features, model window coverage or accepted training readiness.
 
-The retained `scripts/verify_design_contract.py` is historical evidence for the
-superseded 26-series design and is not the current acceptance command. The
-revised handoff's window and score-coverage values still require later current
-executable verification before they become accepted-run evidence.
+`scripts/verify_design_contract.py` is the current acceptance-foundation
+command. The superseded 26-series verifier remains available only in Git
+history. The revised handoff's window and score-coverage values still require
+later executable verification before they become accepted-run evidence.

@@ -2,14 +2,18 @@
 
 from __future__ import annotations
 
+import argparse
+from collections.abc import Sequence
 from dataclasses import dataclass
 from pathlib import Path
+import sys
 
 import pandas as pd
 
 from .canonical import (
     CANONICAL_CSV_PATH,
     CANONICAL_SHA256,
+    DataContractError,
     EXPECTED_FIRST_TIMESTAMP,
     EXPECTED_LAST_TIMESTAMP,
     EXPECTED_ORIGINALLY_MISSING_COUNT,
@@ -139,3 +143,31 @@ def format_summary(summary: AcceptanceSummary) -> str:
         )
     )
     return "\n".join(lines)
+
+
+def run_verifier_cli(argv: Sequence[str] | None = None) -> int:
+    """Run the current design-contract verifier command."""
+
+    parser = argparse.ArgumentParser(
+        description=(
+            "Verify the locked 28-series design with shared training and "
+            "validation periods plus separate Condition A and Condition B "
+            "reporting periods."
+        )
+    )
+    parser.add_argument(
+        "--data-path",
+        type=Path,
+        default=CANONICAL_CSV_PATH,
+        help="CSV to check against the pinned canonical contract.",
+    )
+    arguments = parser.parse_args(argv)
+
+    try:
+        summary = verify_acceptance_foundation(arguments.data_path)
+    except (DataContractError, AssertionError) as error:
+        print(f"FAIL: {error}", file=sys.stderr)
+        return 1
+
+    print(format_summary(summary))
+    return 0

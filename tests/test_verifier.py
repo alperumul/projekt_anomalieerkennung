@@ -1,14 +1,16 @@
 from __future__ import annotations
 
 from pathlib import Path
-import subprocess
-import sys
 
 from anomaly_detection.canonical import CANONICAL_CSV_PATH
-from anomaly_detection.verification import verify_acceptance_foundation
+from anomaly_detection.verification import (
+    run_verifier_cli,
+    verify_acceptance_foundation,
+)
 
 REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
-VERIFIER_PATH = REPOSITORY_ROOT / "scripts" / "verify_acceptance.py"
+DESIGN_VERIFIER_PATH = REPOSITORY_ROOT / "scripts" / "verify_design_contract.py"
+COMPATIBILITY_VERIFIER_PATH = REPOSITORY_ROOT / "scripts" / "verify_acceptance.py"
 
 
 def test_verifier_reproduces_counts_and_boundaries() -> None:
@@ -32,34 +34,51 @@ def test_verifier_reproduces_counts_and_boundaries() -> None:
     }
 
 
-def test_verifier_command_runs_outside_repository_root(tmp_path: Path) -> None:
-    completed = subprocess.run(
-        [sys.executable, str(VERIFIER_PATH)],
-        cwd=tmp_path,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        check=False,
+def test_verifier_command_runs_outside_repository_root(
+    tmp_path: Path,
+    monkeypatch,
+    capsys,
+) -> None:
+    monkeypatch.chdir(tmp_path)
+
+    return_code = run_verifier_cli([])
+    captured = capsys.readouterr()
+
+    assert return_code == 0, captured.err
+    assert "PASS canonical_sha256" in captured.out
+    assert "PASS complete_grid: 9380" in captured.out
+    assert (
+        "PASS true_split_rows: "
+        "{'training': 2660, 'validation': 1344, 'continuous_test': 5376}"
+        in captured.out
     )
+    assert (
+        "PASS reporting_condition_rows: "
+        "{'condition_a': 1344, 'condition_b': 4032}"
+        in captured.out
+    )
+    assert "accepted training remains gated" in captured.out
 
-    assert completed.returncode == 0, completed.stderr
-    assert "PASS canonical_sha256" in completed.stdout
-    assert "PASS complete_grid: 9380" in completed.stdout
-    assert "accepted training remains gated" in completed.stdout
 
-
-def test_verifier_command_fails_nonzero_on_hash_mismatch(tmp_path: Path) -> None:
+def test_verifier_command_fails_nonzero_on_hash_mismatch(
+    tmp_path: Path,
+    capsys,
+) -> None:
     changed = tmp_path / "changed.csv"
     changed.write_bytes(CANONICAL_CSV_PATH.read_bytes() + b"\n")
 
-    completed = subprocess.run(
-        [sys.executable, str(VERIFIER_PATH), "--data-path", str(changed)],
-        cwd=tmp_path,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        check=False,
-    )
+    return_code = run_verifier_cli(["--data-path", str(changed)])
+    captured = capsys.readouterr()
 
-    assert completed.returncode != 0
-    assert "SHA-256 mismatch" in completed.stderr
+    assert return_code != 0
+    assert "SHA-256 mismatch" in captured.err
+
+
+def test_current_verifier_entry_points_do_not_encode_superseded_splits() -> None:
+    for verifier_path in (DESIGN_VERIFIER_PATH, COMPATIBILITY_VERIFIER_PATH):
+        source = verifier_path.read_text(encoding="utf-8")
+
+        assert "train-core" not in source
+        assert "train-tail" not in source
+        assert "SPLITS =" not in source
+        assert "run_verifier_cli" in source
