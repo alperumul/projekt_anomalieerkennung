@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtuelle Umgebung
+venv/
+.venv/
+
+# PyCharm
+.idea/
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/

@@ -1,0 +1,57 @@
+# ── Python ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ── Virtual environments ────────────────────────────────
+# Keep local environments out of the current workspace.
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# ── Jupyter ─────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── ML / training artifacts (regenerable, can be large) ─
+*.h5
+*.keras
+*.pt
+*.pth
+*.ckpt
+*.onnx
+checkpoints/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+
+# ── OS / editor ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ── Secrets / local overrides ───────────────────────────
+.env
+*.local
+
+# Excluded historical predecessor; never current implementation authority.
+/diğer/
+
+# Workspace-only agent and stale instruction material
+/.agents/
+/CLAUDE.md
+/claude.md
+
+# Local test and analysis caches
+/.pytest_cache/
+/.coverage
+htmlcov/
