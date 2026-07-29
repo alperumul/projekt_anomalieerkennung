@@ -1,0 +1,564 @@
+{
+  "accepted_preprocessing_artifact": {
+    "path": "docs/provenance/2026-07-26-phase-6-accepted-preprocessing-artifact.json",
+    "preprocessing_config_id": "shared-visitor-log1p-per-series-zscore-ddof0-scaled-patch2-v1",
+    "sha256": "3830dcd54279bf94efff6ca9c170c534bf3f7461c027997a1d1bc5102d2e6d10",
+    "source_identity": {
+      "base_commit": "ca4a8d09889338b50cc79af801252a779e25d0c5",
+      "source_manifest": [
+        {
+          "path": "AGENTS.md",
+          "sha256": "9a3dc947059d97510e03d8c19eae40ff25f23b50978bb8ffd4793cf1ef349899"
+        },
+        {
+          "path": "README.md",
+          "sha256": "cad722b21bc0c05e6f5b3e02357e54b4768fed8a42c7aefc763cf48fc8f52d6a"
+        },
+        {
+          "path": "docs/README.md",
+          "sha256": "cfca4da5f7620126c482e5f775bbe8e0890c36ed1f297a385265635e2f88e41b"
+        },
+        {
+          "path": "docs/approvals/2026-07-27-partner-bundled-reapproval.md",
+          "sha256": "d32b4fe86eeb8a9b1ee4a44f2f18a3b410a064900f1d039440d7fb3529e45d5f"
+        },
+        {
+          "path": "docs/approvals/bundled-partner-reapproval-evidence.json",
+          "sha256": "e677196c600be2a0922b283c0ab3b6dff1e38d43b58252f9ab1443ea0d942330"
+        },
+        {
+          "path": "docs/decisions/2026-07-25-visitor-preprocessing.md",
+          "sha256": "4756bdf2e20ad8c444af60bd31b2904fd63d64c2739302996be82dfeff79adfc"
+        },
+        {
+          "path": "docs/decisions/2026-07-26-tensorflow-framework.md",
+          "sha256": "2f49b289824b14f4985e228fc85cd36bbc531b9239d1a50fc44d5f9e7b6ea39e"
+        },
+        {
+          "path": "docs/design/02-shared-data-contract.md",
+          "sha256": "88277845318207c14e88f737cf0c32af441ba1245ece55c58b03c5e079ed9387"
+        },
+        {
+          "path": "docs/design/03-conv1d-autoencoder.md",
+          "sha256": "88f39876df940507ca48b05e944b29d3f08344aea1c10516be9c4f4143a7ff55"
+        },
+        {
+          "path": "docs/design/05-responsible-ai-and-evidence.md",
+          "sha256": "bf517001f8c634f347e05b74d468ec1c5507577c21b9813654e65c82acb9ff7d"
+        },
+        {
+          "path": "docs/design/06-checklist-and-limitations.md",
+          "sha256": "e89f6d29ad1290fa612dcd4f6964bf38618bdf763e3a1d2bb8f50c64191d5bf1"
+        },
+        {
+          "path": "docs/environment/2026-07-24-pre-implementation.md",
+          "sha256": "ae264f3cb4704d460fe49f74290064ff7fe4d7204278bc288f0591d856012ce6"
+        },
+        {
+          "path": "docs/handoffs/2026-07-24-implementation-handoff.md",
+          "sha256": "00ad4931ffa7bec4b9093206d4b9d514a5e1439af63a25f39b95f088e941cbd4"
+        },
+        {
+          "path": "docs/handoffs/2026-07-25-phase-2-implementation-prompt.md",
+          "sha256": "ed0eae6494428d252da90da3d15b81aa9b52a6baf5ea8bc1ae038e8ec5027794"
+        },
+        {
+          "path": "docs/handoffs/2026-07-25-phase-3-implementation-prompt.md",
+          "sha256": "795cbf49c42c013f53ec18a8a92a1a5b82e59d2fb845c216b593670838627c92"
+        },
+        {
+          "path": "docs/handoffs/2026-07-26-phase-4-implementation-prompt.md",
+          "sha256": "289554a05d76c4ff02f706866fd23cc647cf3277894791962fa89524badceaea"
+        },
+        {
+          "path": "docs/handoffs/2026-07-26-phase-5-implementation-prompt.md",
+          "sha256": "429ff309b4ac905a85e6aa19451ac63f9361f81e1e61b8c0e0726d2ba3a7f2e0"
+        },
+        {
+          "path": "docs/handoffs/2026-07-26-phase-6-implementation-prompt.md",
+          "sha256": "482047883d9b9dc5e518c04742c230f270272a8031f70f68cb6426cc629387fa"
+        },
+        {
+          "path": "docs/provenance/2026-07-24-new-data.sha256",
+          "sha256": "2139c44e3e8773fc7ca7b238555fb6150bb65384617a67cd74b2b210388e8463"
+        },
+        {
+          "path": "pyproject.toml",
+          "sha256": "5f331ed45312cf6a1ae066a0fb006032627bd86d91ccec9ccd5bafa0c2d5cd20"
+        },
+        {
+          "path": "scripts/run_phase6_standard_selection.py",
+          "sha256": "7f67ffcf67e7bf5fa138d137dae90c9fd9ed5347bf4174724bb9061f9dd46523"
+        },
+        {
+          "path": "scripts/verify_acceptance.py",
+          "sha256": "ed9b73a238fc20a5d98b2ef72454572e14f6173d3584e86925badb575d5db152"
+        },
+        {
+          "path": "scripts/verify_design_contract.py",
+          "sha256": "7a5f9504778c9c6fde27348be78d1dd14185e0687392b35c07c0cb62b4ee9a74"
+        },
+        {
+          "path": "src/anomaly_detection/__init__.py",
+          "sha256": "e427f4503801164a3307be3c76f735bb7d02ff5ebf4ef8d927262cdd925aee48"
+        },
+        {
+          "path": "src/anomaly_detection/autoencoder_model.py",
+          "sha256": "7adbf43d028544481f76d18f2d8f645a01d3e6c2089ed62b64b5a9b59fd43fcf"
+        },
+        {
+          "path": "src/anomaly_detection/autoencoder_windows.py",
+          "sha256": "5fab42f9a2a882fb135156ed0fddcca46f04abd739bfef62fead424753d7b74a"
+        },
+        {
+          "path": "src/anomaly_detection/canonical.py",
+          "sha256": "024228aa377e8c9a6da1c2cbb659fb2d6352a717c5c13d03abeb8e00523292d1"
+        },
+        {
+          "path": "src/anomaly_detection/periods.py",
+          "sha256": "a96a889d88b0c2ea37815b4ab1b968c97f9aaec1ebbf933a83ba66c60977966d"
+        },
+        {
+          "path": "src/anomaly_detection/phase4.py",
+          "sha256": "a7a9d4a9b086e1cf461d2970d60a93c1f83bb0c754857eeb6d368b15a0cb8a4d"
+        },
+        {
+          "path": "src/anomaly_detection/phase5.py",
+          "sha256": "faa7e3efb688ece900623b35e353c9b1739ddb795b1e4195b87942eee0fad508"
+        },
+        {
+          "path": "src/anomaly_detection/phase6.py",
+          "sha256": "93c6ac0354fcbc3a6bff9b9bd83a4c5a94b515c2021f5f2ad0a4bce3a7b01d94"
+        },
+        {
+          "path": "src/anomaly_detection/preprocessing.py",
+          "sha256": "5e5df41443a1ac2ab053dc9b31395cb33ddcf5093db56203e78226c8b0078b36"
+        },
+        {
+          "path": "src/anomaly_detection/provenance.py",
+          "sha256": "81070cc7eb9d7e4ef4b82f8843659d05a3c5a1661ecffea80143c850c6b2b389"
+        },
+        {
+          "path": "src/anomaly_detection/verification.py",
+          "sha256": "21fb1601eee05aa6da3419ec6283fa465fa46b264b3c863b4353e066142d23a2"
+        },
+        {
+          "path": "tests/conftest.py",
+          "sha256": "f6915e60b76f8a08d1fa3184a60bce3359c217f835538ff5c1a876066d995b49"
+        },
+        {
+          "path": "tests/test_autoencoder_model.py",
+          "sha256": "8cd0a7831fe0843755b26373306b248358b4d2230e01d709a8db876b54175422"
+        },
+        {
+          "path": "tests/test_autoencoder_windows.py",
+          "sha256": "31652157ec2bccc78e2e0c4ad60aaffa1610208e5400c532f6f2cdf373ffd948"
+        },
+        {
+          "path": "tests/test_canonical.py",
+          "sha256": "d3fdeabdbce1b5f45d93893d48776b3fc2f9049a20008fc6e74f713fab2ffcd1"
+        },
+        {
+          "path": "tests/test_periods.py",
+          "sha256": "10d111af4e001c241096fa20e51bb63f25600360fdf52af7c5cc36e742c8dd58"
+        },
+        {
+          "path": "tests/test_phase4.py",
+          "sha256": "aaf12c1850d53f3f9e9bfdba2c7042a026cb2d30ac16a11bb3283affa23e3316"
+        },
+        {
+          "path": "tests/test_phase5.py",
+          "sha256": "953652c1da7df514f485ce09620c0414249680fe6b497f76dbc1328fd807bb5e"
+        },
+        {
+          "path": "tests/test_phase6.py",
+          "sha256": "45f0a41494d50eed6d3961d25562d86c82f906f0525c41a10801c7bab2193781"
+        },
+        {
+          "path": "tests/test_preprocessing.py",
+          "sha256": "567509c2f1aabeaedbc43ee7d5422cf919ff13ed0b07123f1395794e094ab568"
+        },
+        {
+          "path": "tests/test_provenance.py",
+          "sha256": "b1d9bb3d186adf8ec774c0eb19526c46fd8c2a7b7b30157b1866cf3a4bc06326"
+        },
+        {
+          "path": "tests/test_verifier.py",
+          "sha256": "b31b9e23f1902f67c26b70ecda3c04e64f4a1c62a4778f6e24912017ad60f31e"
+        }
+      ],
+      "source_manifest_sha256": "c9bf5867b0a931a6c78466c61cfacaff2100700257c0f72fb309193d386766ac",
+      "working_tree_clean": false
+    }
+  },
+  "canonical_data": {
+    "path": "new-data/data/bad_nauheim_bereinigt.csv",
+    "sha256": "af807e38e63a253eea4a3639649c67744b0a34b839b80ee7c6682a55ea62991f"
+  },
+  "condition_counts": {
+    "condition_a": {
+      "grid_rows": 1344,
+      "input_available_count": 1260,
+      "originally_missing_count": 217,
+      "originally_observed_count": 1127,
+      "patched_input_count": 133,
+      "series_count": 28,
+      "timestamp_count": 48,
+      "unavailable_input_count": 84
+    },
+    "condition_b": {
+      "grid_rows": 4032,
+      "input_available_count": 2354,
+      "originally_missing_count": 2000,
+      "originally_observed_count": 2032,
+      "patched_input_count": 322,
+      "series_count": 28,
+      "timestamp_count": 144,
+      "unavailable_input_count": 1678
+    }
+  },
+  "environment": {
+    "direct_dependency": "matplotlib==3.11.1",
+    "implementation": "CPython",
+    "machine": "AMD64",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10",
+    "resolved_distributions": {
+      "contourpy": "1.3.3",
+      "cycler": "0.12.1",
+      "fonttools": "4.63.0",
+      "kiwisolver": "1.5.0",
+      "matplotlib": "3.11.1",
+      "numpy": "2.5.1",
+      "packaging": "26.2",
+      "pillow": "12.3.0",
+      "pyparsing": "3.3.2",
+      "python-dateutil": "2.9.0.post0",
+      "six": "1.17.0"
+    }
+  },
+  "generated_at_utc": "2026-07-28T19:07:20Z",
+  "held_out_data_scope": {
+    "condition_b_is_held_out_test_data": true,
+    "inspection_scope": "predeclared descriptive availability only",
+    "may_select_or_tune_lstm": false
+  },
+  "manifest_self_hash_included": false,
+  "mask_definitions": {
+    "input_available_mask": "original observation or contract-permitted patched short gap",
+    "input_was_patched": "input_available_mask and not target_observed_mask",
+    "target_observed_mask": "(not war_fehlend) and visitors_source_stored is not blank"
+  },
+  "partner_style_reference": {
+    "branch": "feature/data-preprocessing",
+    "commit": "276ba9e46f1c442c478f0ea715d726fce81804d9",
+    "inspected_file_blob_shas": {
+      "data/bad_nauheim_bereinigt.csv": "e17ede0a84ca679bfba7da0e47d27255611757a1",
+      "src/daten_einlesen.py": "aca3078fae2f9e50e9260251b837ae98ef9925a6",
+      "src/datenbereinigung_daten_einlesen_und_pruefen.py": "dc3e12a5621101503d830c46e54132e8a3cf8683",
+      "src/datenbereinigung_daten_mehrfachmessungen_und_aggregation.py": "6e7747bbd05554a949a99fe361412a89ee8e330f",
+      "src/datenbereinigung_daten_pipeline.py": "70d505902d1903efcd8055383c8e7976e6dda076",
+      "src/datenbereinigung_daten_qualitaet_und_speichern.py": "2a526af286b87834dbea9839e28e27f007958a0f",
+      "src/datenbereinigung_daten_zeitachse_und_interpolation.py": "4a71339e39fbad26d1e02502d8eb9934dc8c912a",
+      "src/explorative_datenanalyse_besucher_und_aufenthaltsdauer.py": "8cb81cdb21dd1b63f35fc06f317a295f4b06c570",
+      "src/explorative_datenanalyse_muster_und_export.py": "b6ca48cd2ac8ed73bd0f11aec6d577e2e3ae1bfa",
+      "src/explorative_datenanalyse_pipeline.py": "d16e3e9634736e4e13dbc0c8a231ccb84a83d006",
+      "src/explorative_datenanalyse_sensoren_und zeit.py": "70bc0e0c9f535fede2493f8d019c17251b5a827f",
+      "src/feature_engineering.py": "fa301283a77b3e29a2028f421b3a5eac6aa1675c",
+      "src/windowing.py": "3fb07aa52a05d209e2428cc812f144366d7de998"
+    },
+    "repository": "https://github.com/AfnanIsmail/Deep-Learning-Anomalieerkennung"
+  },
+  "payloads": [
+    {
+      "byte_size": 4610,
+      "path": "README.md",
+      "sha256": "5df845c128aa72b4606913104c4f062d906206714508f9e67255e60119c2f922"
+    },
+    {
+      "byte_size": 383,
+      "path": "data/condition_a_b_verfuegbarkeit.csv",
+      "sha256": "2956a81de55baec28a075deb1f290f84b44d9e361ce2c8bd672248b310b9527c"
+    },
+    {
+      "byte_size": 808729,
+      "path": "data/condition_b_stundendaten.csv",
+      "sha256": "9afeb2f80bc708f71586014dd6d0a2265590737a4fcadbb7a8376095c0b1cc17"
+    },
+    {
+      "byte_size": 2605,
+      "path": "data/condition_b_verfuegbarkeit_pro_serie.csv",
+      "sha256": "3f82c95245a041ffaa9b5ffa5489f64a034f24b7aedb43cd5c13c4489eb43951"
+    },
+    {
+      "byte_size": 661,
+      "path": "data/condition_b_verfuegbarkeit_pro_tag.csv",
+      "sha256": "34062ab8219a3aaaf87d0187865811f6ebadb1b9823bb62881d82eba3c490d43"
+    },
+    {
+      "byte_size": 115050,
+      "path": "plots/condition_a_b_verfuegbarkeit.png",
+      "sha256": "2eb7aced4b872a35f6245fedb44e20a6edc598721bfc240ccbc7b5148a0555d5"
+    },
+    {
+      "byte_size": 299145,
+      "path": "plots/condition_b_fehlende_stunden_pro_serie.png",
+      "sha256": "9813971e9cfadd6172e339b806aa9126102166114eddc8de767ae7eb727cd14b"
+    },
+    {
+      "byte_size": 330352,
+      "path": "plots/condition_b_groesste_luecke_pro_serie.png",
+      "sha256": "049d24380fdfb3da50522cec4adbf82c840d16baf3c4647673aa1cf27c668d52"
+    },
+    {
+      "byte_size": 199403,
+      "path": "plots/condition_b_verfuegbarkeit_pro_tag.png",
+      "sha256": "725d08690873664dd3d91a4242ec3bdb0e357f69714bdbd6b559eb1564dc3fe2"
+    },
+    {
+      "byte_size": 15754,
+      "path": "src/condition_b_daten_einlesen.py",
+      "sha256": "015f744907c01b81257c456e3f4f673a5386f89ff786cf663ba99e23c88292dc"
+    },
+    {
+      "byte_size": 6899,
+      "path": "src/explorative_datenanalyse_condition_b.py",
+      "sha256": "b2a72d7d345a222e9a055d497adb8eaaf0306ef3639e552f9e812110098234a6"
+    },
+    {
+      "byte_size": 1519,
+      "path": "src/explorative_datenanalyse_condition_b_pipeline.py",
+      "sha256": "cbf782d313eb88d496f05c7225980d76a01c2ce2e76f212317d542d2936223cd"
+    }
+  ],
+  "periods": {
+    "condition_a": {
+      "end_exclusive": "2025-07-08T00:00:00+00:00",
+      "start_inclusive": "2025-07-06T00:00:00+00:00"
+    },
+    "condition_b": {
+      "end_exclusive": "2025-07-14T00:00:00+00:00",
+      "start_inclusive": "2025-07-08T00:00:00+00:00"
+    },
+    "continuous_test": {
+      "end_exclusive": "2025-07-14T00:00:00+00:00",
+      "start_inclusive": "2025-07-06T00:00:00+00:00"
+    }
+  },
+  "plotting": {
+    "authorization": {
+      "decision_path": "docs/decisions/2026-07-28-partner-condition-b-visualization-dependency.md",
+      "decision_sha256": "6d2237883d0db11452b4f9473a89fd2a5fa8d8df317b8da911ce268575d299c2",
+      "declaration_file": "requirements-visualization.txt",
+      "declaration_format": "one exact requirement line",
+      "declaration_sha256": "48ee9dbf164ec7438470efa7b3847688dc1010a88d020a7777ace4934c1fcace",
+      "dependency": "matplotlib==3.11.1",
+      "environment_path": ".venv-visualization",
+      "installed_version": "3.11.1",
+      "training_pyproject_sha256": "5f331ed45312cf6a1ae066a0fb006032627bd86d91ccec9ccd5bafa0c2d5cd20"
+    },
+    "backend": "Agg",
+    "completed": true,
+    "dpi": 300,
+    "interactive_show_used": false
+  },
+  "schema_name": "bad_nauheim_partner_condition_b_bundle",
+  "schema_version": 1,
+  "session2_generation_source_identity": {
+    "base_commit": "ca4a8d09889338b50cc79af801252a779e25d0c5",
+    "source_manifest": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "22f4aa6991166804805f462d723cecaa59dd30a858b4e58e724d922c81e2ae3a"
+      },
+      {
+        "path": "docs/design/02-shared-data-contract.md",
+        "sha256": "88277845318207c14e88f737cf0c32af441ba1245ece55c58b03c5e079ed9387"
+      },
+      {
+        "path": "docs/design/04-evaluation-and-injection.md",
+        "sha256": "e848d78af6fea3efa4ea43e2f242b8e973eac169f8be1c4b4674a148d5d3f279"
+      },
+      {
+        "path": "docs/design/05-responsible-ai-and-evidence.md",
+        "sha256": "a6a1496839e6a1c38bda3d4aedce07c3d4a352a03e0ef8aa7b7a602b3bed098a"
+      },
+      {
+        "path": "docs/design/06-checklist-and-limitations.md",
+        "sha256": "8b0303260630aa6a0bfce165c934b5bcda2e00b896b6063c20a8cda877488319"
+      },
+      {
+        "path": "docs/handoffs/2026-07-24-implementation-handoff.md",
+        "sha256": "4290acaf05239c2223b8661997649e5ef90100954e304b9988bb1255874e5fc7"
+      },
+      {
+        "path": "docs/handoffs/2026-07-28-afnan-style-and-compatibility-profile.md",
+        "sha256": "cab33c922f58b6edc8b644720fd93038de1c6822138010ebc43699138f1d681f"
+      },
+      {
+        "path": "docs/handoffs/2026-07-28-partner-condition-b-data-handoff.md",
+        "sha256": "938b2d58c1c02bea6299e52504cf95afbba5e908bdba4d09c7e731e3c4b36cac"
+      },
+      {
+        "path": "docs/handoffs/2026-07-28-partner-condition-b-multisession-plan.md",
+        "sha256": "dafbbceab0cc5c6dfcb40ce9ae72d56b3bd9876ace21dae05e502068cc8123fe"
+      },
+      {
+        "path": "docs/handoffs/2026-07-28-partner-condition-b-session-2-data-implementation-prompt.md",
+        "sha256": "fc81bac6c56feefeb3e4c06879d37e07a46f7318d553f2055fbd9d48613e64a8"
+      },
+      {
+        "path": "docs/provenance/2026-07-26-phase-6-accepted-preprocessing-artifact.json",
+        "sha256": "3830dcd54279bf94efff6ca9c170c534bf3f7461c027997a1d1bc5102d2e6d10"
+      },
+      {
+        "path": "pyproject.toml",
+        "sha256": "5f331ed45312cf6a1ae066a0fb006032627bd86d91ccec9ccd5bafa0c2d5cd20"
+      },
+      {
+        "path": "scripts/build_partner_condition_b_bundle.py",
+        "sha256": "19f142179ded94460e78d33beaf5c546ec6e86cd76bfd715048e12d8a0a7fd4c"
+      },
+      {
+        "path": "src/anomaly_detection/canonical.py",
+        "sha256": "024228aa377e8c9a6da1c2cbb659fb2d6352a717c5c13d03abeb8e00523292d1"
+      },
+      {
+        "path": "src/anomaly_detection/partner_condition_b.py",
+        "sha256": "da5ce8492f6a2504a1c5c74780666bef8cf79210cf58cf270fa8dd66558e7356"
+      },
+      {
+        "path": "src/anomaly_detection/periods.py",
+        "sha256": "a96a889d88b0c2ea37815b4ab1b968c97f9aaec1ebbf933a83ba66c60977966d"
+      },
+      {
+        "path": "src/anomaly_detection/preprocessing.py",
+        "sha256": "5e5df41443a1ac2ab053dc9b31395cb33ddcf5093db56203e78226c8b0078b36"
+      },
+      {
+        "path": "src/anomaly_detection/provenance.py",
+        "sha256": "3a41f12c1eac1fa57715281ac84723fc3e7269ca653c876742869a552b4cb6cb"
+      },
+      {
+        "path": "tests/test_partner_condition_b.py",
+        "sha256": "241b234f971c1ae7f35d27d3aff355b2ddbae152e271c203722a67f1afc0f268"
+      }
+    ],
+    "source_manifest_sha256": "b15f3eaa7ee65ed46b903b4ca62af1b59f135325cd408b8df299d7579203ac51",
+    "working_tree_clean": false
+  },
+  "session3_generation_source_identity": {
+    "base_commit": "ca4a8d09889338b50cc79af801252a779e25d0c5",
+    "source_manifest": [
+      {
+        "path": "AGENTS.md",
+        "sha256": "22f4aa6991166804805f462d723cecaa59dd30a858b4e58e724d922c81e2ae3a"
+      },
+      {
+        "path": "docs/decisions/2026-07-28-partner-condition-b-visualization-dependency.md",
+        "sha256": "6d2237883d0db11452b4f9473a89fd2a5fa8d8df317b8da911ce268575d299c2"
+      },
+      {
+        "path": "docs/design/02-shared-data-contract.md",
+        "sha256": "88277845318207c14e88f737cf0c32af441ba1245ece55c58b03c5e079ed9387"
+      },
+      {
+        "path": "docs/design/04-evaluation-and-injection.md",
+        "sha256": "e848d78af6fea3efa4ea43e2f242b8e973eac169f8be1c4b4674a148d5d3f279"
+      },
+      {
+        "path": "docs/design/05-responsible-ai-and-evidence.md",
+        "sha256": "a6a1496839e6a1c38bda3d4aedce07c3d4a352a03e0ef8aa7b7a602b3bed098a"
+      },
+      {
+        "path": "docs/design/06-checklist-and-limitations.md",
+        "sha256": "8b0303260630aa6a0bfce165c934b5bcda2e00b896b6063c20a8cda877488319"
+      },
+      {
+        "path": "docs/handoffs/2026-07-24-implementation-handoff.md",
+        "sha256": "4290acaf05239c2223b8661997649e5ef90100954e304b9988bb1255874e5fc7"
+      },
+      {
+        "path": "docs/handoffs/2026-07-28-afnan-style-and-compatibility-profile.md",
+        "sha256": "cab33c922f58b6edc8b644720fd93038de1c6822138010ebc43699138f1d681f"
+      },
+      {
+        "path": "docs/handoffs/2026-07-28-partner-condition-b-data-handoff.md",
+        "sha256": "938b2d58c1c02bea6299e52504cf95afbba5e908bdba4d09c7e731e3c4b36cac"
+      },
+      {
+        "path": "docs/handoffs/2026-07-28-partner-condition-b-multisession-plan.md",
+        "sha256": "dafbbceab0cc5c6dfcb40ce9ae72d56b3bd9876ace21dae05e502068cc8123fe"
+      },
+      {
+        "path": "docs/handoffs/2026-07-28-partner-condition-b-session-2-completion.md",
+        "sha256": "b792743cf723c407b6cb15a846afddbff2eaff54afd033218e50d008fa597f1b"
+      },
+      {
+        "path": "docs/handoffs/2026-07-28-partner-condition-b-session-2-data-implementation-prompt.md",
+        "sha256": "fc81bac6c56feefeb3e4c06879d37e07a46f7318d553f2055fbd9d48613e64a8"
+      },
+      {
+        "path": "docs/handoffs/2026-07-28-partner-condition-b-session-3-eda-bundle-prompt.md",
+        "sha256": "3eaf7b1b53c3596c0d294a8ac6c553d8f970496acf41fa560149f5b154c0b1da"
+      },
+      {
+        "path": "docs/provenance/2026-07-26-phase-6-accepted-preprocessing-artifact.json",
+        "sha256": "3830dcd54279bf94efff6ca9c170c534bf3f7461c027997a1d1bc5102d2e6d10"
+      },
+      {
+        "path": "pyproject.toml",
+        "sha256": "5f331ed45312cf6a1ae066a0fb006032627bd86d91ccec9ccd5bafa0c2d5cd20"
+      },
+      {
+        "path": "requirements-visualization.txt",
+        "sha256": "48ee9dbf164ec7438470efa7b3847688dc1010a88d020a7777ace4934c1fcace"
+      },
+      {
+        "path": "scripts/build_partner_condition_b_bundle.py",
+        "sha256": "19f142179ded94460e78d33beaf5c546ec6e86cd76bfd715048e12d8a0a7fd4c"
+      },
+      {
+        "path": "src/anomaly_detection/canonical.py",
+        "sha256": "024228aa377e8c9a6da1c2cbb659fb2d6352a717c5c13d03abeb8e00523292d1"
+      },
+      {
+        "path": "src/anomaly_detection/partner_condition_b.py",
+        "sha256": "da5ce8492f6a2504a1c5c74780666bef8cf79210cf58cf270fa8dd66558e7356"
+      },
+      {
+        "path": "src/anomaly_detection/partner_condition_b_delivery.py",
+        "sha256": "ea6fd57e8021a8c1ee66bddba4b7834ebb1e814fe88e2fccb8f968471d572acb"
+      },
+      {
+        "path": "src/anomaly_detection/periods.py",
+        "sha256": "a96a889d88b0c2ea37815b4ab1b968c97f9aaec1ebbf933a83ba66c60977966d"
+      },
+      {
+        "path": "src/anomaly_detection/preprocessing.py",
+        "sha256": "5e5df41443a1ac2ab053dc9b31395cb33ddcf5093db56203e78226c8b0078b36"
+      },
+      {
+        "path": "src/anomaly_detection/provenance.py",
+        "sha256": "3a41f12c1eac1fa57715281ac84723fc3e7269ca653c876742869a552b4cb6cb"
+      },
+      {
+        "path": "tests/test_partner_condition_b.py",
+        "sha256": "241b234f971c1ae7f35d27d3aff355b2ddbae152e271c203722a67f1afc0f268"
+      }
+    ],
+    "source_manifest_sha256": "acf6529de5e615ba80df16b9d28470dd6062268c044b6601efa8b25840871715",
+    "working_tree_clean": false
+  },
+  "session_boundary": {
+    "all_condition_b_rows_retained": true,
+    "external_repository_mutated": false,
+    "lstm_behavior_selected": false,
+    "model_work_performed": false
+  },
+  "timezones": {
+    "behavioral_calendar": "Europe/Berlin",
+    "daily_summary_grouping": "UTC",
+    "storage_split_join": "UTC"
+  }
+}

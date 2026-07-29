@@ -1,0 +1,3 @@
+evaluation_condition,grid_rows,series_count,timestamp_count,originally_observed_count,originally_missing_count,original_observation_rate,patched_input_count,input_available_count,input_available_rate,unavailable_input_count
+condition_a,1344,28,48,1127,217,0.83854166666666663,133,1260,0.9375,84
+condition_b,4032,28,144,2032,2000,0.50396825396825395,322,2354,0.58382936507936511,1678
